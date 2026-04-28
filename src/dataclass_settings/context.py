@@ -20,11 +20,11 @@ class Context:
 
     @property
     def name(self):
-        return cast(str, self.field_name)
+        pass
 
     @property
     def loaders(self) -> tuple[type[Loader], ...]:
-        return tuple(self.state.keys())
+        pass
 
     def enter(self, name: str):
         path = [*self.path]

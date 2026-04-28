@@ -69,10 +69,10 @@ class Secret(Loader):
         return None
 
     def with_name(self, *names: str) -> Self:
-        return self.__class__(*names, dir=self.dir)
+        pass
 
     def with_dir(self, *dir: str) -> Self:
-        return self.__class__(*self.names, dir=dir)
+        pass
 
     @classmethod
     def load_with(cls, *, dir: Sequence[PathLike] | None = None) -> SecretState:
